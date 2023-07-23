@@ -39,7 +39,14 @@ export default function Home() {
         sx={{ height: "100vh", bgcolor: "primary.main" }}
       >
         <Typography variant="h1">Picture-in-Picture App</Typography>
-        <Box sx={{ color: "secondary.main", my: "2rem", fontSize: "24px" }}>
+        <Box
+          sx={{
+            color: "secondary.main",
+            my: "2rem",
+            fontSize: "24px",
+            textAlign: "center",
+          }}
+        >
           Se você possuí somente um monitor, esse App é perfeito para você!
           Facilite sua vida assistindo tutoriais de programação e desenhando
           interfaces.
