@@ -36,7 +36,7 @@ export default function Home() {
         justifyContent="center"
         alignItems="center"
         direction="column"
-        sx={{ height: "100vh", bgcolor: "primary.main" }}
+        sx={{ height: "100vh", bgcolor: "primary.main", pb: "10rem" }}
       >
         <Typography variant="h1">Picture-in-Picture App</Typography>
         <Box
