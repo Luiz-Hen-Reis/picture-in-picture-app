@@ -36,7 +36,7 @@ export default function Home() {
         justifyContent="center"
         alignItems="center"
         direction="column"
-        sx={{ height: "100vh", bgcolor: "primary.main", pb: "10rem" }}
+        sx={{ height: "100vh", bgcolor: "primary.main" }}
       >
         <Typography variant="h1">Picture-in-Picture App</Typography>
         <Box
@@ -66,7 +66,7 @@ export default function Home() {
         >
           Ativar Picture-In-Picture!
         </Button>
-        <video ref={videoEl} controls height={360} width={640}></video>
+        <video ref={videoEl} controls height={360} width={640} hidden></video>
       </Stack>
     </ThemeProvider>
   );
