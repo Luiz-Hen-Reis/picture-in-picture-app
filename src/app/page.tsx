@@ -3,7 +3,7 @@
 import { ThemeProvider, Typography, Stack, Button, Box } from "@mui/material";
 import { theme } from "./theme";
 import { AspectRatio } from "@mui/icons-material";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 export default function Home() {
   const videoEl = useRef<HTMLVideoElement>(null);
@@ -25,10 +25,6 @@ export default function Home() {
       if (error instanceof Error) console.error(error.message);
     }
   }
-
-  useEffect(() => {
-    selectMediaStream();
-  }, []);
 
   return (
     <ThemeProvider theme={theme}>
@@ -55,6 +51,16 @@ export default function Home() {
           Clique no botão para ativar o modo picture-in-picture e assista videos
           enquanto navega pela web.
         </Box>
+        <Button
+          variant="outlined"
+          color="secondary"
+          size="large"
+          endIcon={<AspectRatio />}
+          sx={{ mb: "2rem" }}
+          onClick={selectMediaStream}
+        >
+          Escolher guia
+        </Button>
         <Button
           variant="outlined"
           color="secondary"
